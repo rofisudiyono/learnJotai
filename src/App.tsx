@@ -11,6 +11,7 @@ import {myStore} from './store';
 
 import {initializeMMKVFlipper} from 'react-native-mmkv-flipper-plugin';
 import {MMKV} from 'react-native-mmkv';
+import FetchWithCache from './screens/FetchWithCache';
 const Stack = createNativeStackNavigator<RootStackParamList>();
 const storage = new MMKV();
 if (__DEV__) {
@@ -27,6 +28,7 @@ function MyStack() {
       />
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="ExampleAtoms" component={ExampleAtoms} />
+      <Stack.Screen name="FetchWithCache" component={FetchWithCache} />
       <Stack.Screen
         name="ExampleLocalStorage"
         component={ExampleLocalStorage}

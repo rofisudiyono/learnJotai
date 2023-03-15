@@ -7,6 +7,7 @@ export type RootStackParamList = {
   Home: undefined;
   ExampleLocalStorage: undefined;
   ExampleAtoms: undefined;
+  FetchWithCache: undefined;
 };
 
 export type RootStackScreenProps<T extends keyof RootStackParamList> =

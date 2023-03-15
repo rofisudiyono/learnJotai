@@ -31,11 +31,15 @@ const Home = ({
         </Text>
         <Button
           onPress={() => navigation.navigate('ExampleAtoms')}
-          label={'Example Count Atom'}
+          label={'Example count atom'}
         />
         <Button
           onPress={() => navigation.navigate('ExampleLocalStorage')}
-          label={'Example Local Storage'}
+          label={'Example local storage'}
+        />
+        <Button
+          onPress={() => navigation.navigate('FetchWithCache')}
+          label={'Example fetch with cache'}
         />
       </View>
     </View>
