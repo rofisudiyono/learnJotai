@@ -1,1 +1,1 @@
-# learnJotai
+# Jotai State Management
