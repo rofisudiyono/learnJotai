@@ -27,11 +27,20 @@ function MyStack() {
         options={{headerShown: false}}
       />
       <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="ExampleAtoms" component={ExampleAtoms} />
-      <Stack.Screen name="FetchWithCache" component={FetchWithCache} />
+      <Stack.Screen
+        name="ExampleAtoms"
+        component={ExampleAtoms}
+        options={{headerTitle: 'Example Atoms'}}
+      />
+      <Stack.Screen
+        name="FetchWithCache"
+        component={FetchWithCache}
+        options={{headerTitle: 'Fetch With Cache'}}
+      />
       <Stack.Screen
         name="ExampleLocalStorage"
         component={ExampleLocalStorage}
+        options={{headerTitle: 'Example Local Storage'}}
       />
     </Stack.Navigator>
   );
